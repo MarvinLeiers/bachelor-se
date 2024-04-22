@@ -2,4 +2,4 @@
 title: Qualitätssicherung und -management
 ---
 #### Inhalt
-- [[Verifikation vs. Validierung]]
+- [[verification-validiation|Verifikation vs. Validierung]]
