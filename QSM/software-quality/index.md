@@ -5,7 +5,8 @@ Als Software-Qualität bezeichnet man die Eigenschaften einer Software, die sich
 
 Qualitätseigenschaften, die für Nutzer von Relevanz sind, gehören zur **externen** Software-Qualität. Eigenschaften der **internen** Software-Qualität sind hingegen nur für Entwickler relevant.
 
-> [!warning] Niedrige Software-Qualität führt zum Scheitern von Projekten
+> [!warning] Wichtig
+> Niedrige Software-Qualität führt zum Scheitern von Projekten
 #### Externe Software-Qualität
 - [[Richtigkeit]]
 - [[Responsiveness]]
