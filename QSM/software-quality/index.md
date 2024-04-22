@@ -21,4 +21,3 @@ Qualitätseigenschaften, die für Nutzer von Relevanz sind, gehören zur **exter
 - [[Wartbarkeit]]
 - [[Verständlichkeit]]
 - [[Enjoyability]]
-- 
