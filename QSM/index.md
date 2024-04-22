@@ -1,5 +1,5 @@
 ---
-title: Mensch-Computer-Interaktion
+title: Qualitätssicherung und -management
 ---
 #### Inhalt
 - [[Verifikation vs. Validierung]]
