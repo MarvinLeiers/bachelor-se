@@ -1,0 +1,48 @@
+name: Deploy Obsidian Notes to VPS
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+
+    - name: Clone Quartz repository
+      run: git clone https://github.com/MarvinLeiers/custom-quartz.git
+      working-directory: ${{ github.workspace }}
+
+    - name: Install Quartz dependencies
+      run: npm install
+      working-directory: ${{ github.workspace }}/custom-quartz
+      
+    - name: Copy Obsidian files to Quartz content directory
+      run: |
+        for file in *; do
+          if [ "$file" != "custom-quartz" ]; then
+            mv "$file" ${{ github.workspace }}/custom-quartz/content/
+          fi
+        done
+
+    - name: Change to Quartz directory
+      run: cd quartz
+      working-directory: ${{ github.workspace }}/custom-quartz
+
+    - name: Create and build Obsidian notes
+      run: |
+        npx quartz create
+        npx quartz build
+      working-directory: ${{ github.workspace }}/custom-quartz
+      
+    - name: copy file via ssh password
+      run: |
+        sudo sshpass -p ${{ secrets.SSH_PASSWORD }} scp -r -o StrictHostKeyChecking=no ${{ github.workspace}}/custom-quartz/public/* ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOST }}:/home/${{ secrets.VPS_USERNAME }}/custom-quartz/public
