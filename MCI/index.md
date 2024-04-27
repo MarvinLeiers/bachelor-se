@@ -2,6 +2,6 @@
 title: Mensch-Computer-Interaktion
 ---
 #### Übersicht Themen
-- [[Golden Rules]]
+- [[golden-rules|Golden Rules]]
 - [[Stages of Action]]
 - [[Interaction and Modalities]]
