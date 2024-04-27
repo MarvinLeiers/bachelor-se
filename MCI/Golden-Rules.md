@@ -14,7 +14,7 @@ Benutzer mit unterschiedlicher Erfahrung, haben verschiedene Ansprüche an die s
 -> Fördert [[Benutzbarkeit]] und [[Effizienz]]
 
 ##### 3. Offer informative feedback
-Benutzer deiner Anwendung sollten zu jedem Zeitpunkt und mit jeder ausgeführten Aktion wissen, wo sie sind und was gerade passiert. Achte deshalb darauf, informative Rückmeldungen nach jeder (größeren) Nutzeraktion anzuzeigen, um Verwirrungen zu vermeiden. Ein Beispiel dafür wäre der Dialog, der den Nutzer fragt, ob ein ungespeichertes Dokument wirklich geschlossen werden soll. Rückmeldungen sollten für die meisten Nutzer lesbar sein, es sollte von "Fachwörtern" und Stacktraces abgesehen werden.
+Benutzer deiner Anwendung sollten zu jedem Zeitpunkt und mit jeder ausgeführten Aktion wissen, wo sie sind und was gerade passiert. Achte deshalb darauf, informative Rückmeldungen nach jeder (größeren) Nutzeraktion anzuzeigen, um Verwirrungen zu vermeiden. Für häufige bzw. kleiner Nutzeraktionen dürfen die Rückmeldungen klein ausfallen. Ein Beispiel dafür wäre der Dialog, der den Nutzer fragt, ob ein ungespeichertes Dokument wirklich geschlossen werden soll. Rückmeldungen sollten für die meisten Nutzer lesbar sein, es sollte von "Fachwörtern" und Stacktraces abgesehen werden.
 
 -> Fördert [[Benutzbarkeit]] und [[Effizienz]] (weil Fehler vermieden werden können)
 
