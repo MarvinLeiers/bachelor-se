@@ -1,8 +1,6 @@
 ---
 title: 8 Golden Rules
 ---
-#### 8 Golden Rules
-
 ##### 1. Strive for consistency
 ##### 2. Seek universal usability 
 ##### 3. Offer informative feedback
